@@ -1,0 +1,11 @@
+Tải hết các file Verilog -> mô phỏng 
+Để vào trong thư mục con nào đó của linux on litex vexriscv
+
+soc_linux.py ghi đè lên file gốc, nhớ sửa đường dẫn
+
+ranc3x2.py và packetload.py là file mới, nhớ sửa đường dẫn cho phù hợp 
+
+File .c để chạy baremetal xem trong code anh Đạt 
+
+
+
