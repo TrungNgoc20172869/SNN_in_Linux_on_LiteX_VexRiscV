@@ -3,9 +3,18 @@ Tải hết các file Verilog -> mô phỏng
 
 soc_linux.py ghi đè lên file gốc, nhớ sửa đường dẫn
 
-ranc3x2.py và packetload.py là file mới, nhớ sửa đường dẫn cho phù hợp 
-
+ranc3x2.py và packetload.py là file mới, nhớ sửa đường dẫn cho phù hợp vì soc_linux.py sẽ gọi đến 2 file là ranc3x2.py và packetload.py
+còn ranc3x2.py gọi đến các file verilog
 File .c để chạy baremetal xem trong code anh Đạt 
+thực hiện build bitstream như bình thường, file make.py xem ở github anh Đạt 
+
+Sau khi build ( nhớ thêm option --doc để tạo file doc chứa địa chỉ thanh ghi CSR) thì nạp bitstream rồi chạy lxterm (ko cần đường dẫn đến file linux image)
+reboot để vào bios 
+chạy lệnh packet2snn để bắt đầu chạy SNN và các khối chức năng 
+đợi 1 lúc thì tính toán xong :v
+
+Sau đó dùng lệnh mem read đọc được giá trị các thanh ghi 
+
 
 
 
